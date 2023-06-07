@@ -1,0 +1,44 @@
+.check{
+    border: 1px solid red;
+}
+.gameBoard{
+    display: none;
+}
+.botom-border{
+    border-bottom: 1px solid black;
+}
+.right-border{
+    border-right: 1px solid black;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+    text-align: center;
+    margin: 3px auto;
+}
+td{
+    height: 38px;
+    width: 35px;
+    /* background-color: blue; */
+}
+.disable{
+    pointer-events: none;
+}
+.right{
+    background-color: blue;
+    color: white;
+}
+.tossDiv{
+    display: flex;
+    flex-direction: column;
+    
+
+}
