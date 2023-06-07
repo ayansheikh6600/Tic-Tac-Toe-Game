@@ -2,6 +2,7 @@
 var tossDiv = document.querySelector(".tossDiv")
 var tossResult = document.querySelector(".tossResult")
 var gameBoard = document.querySelector(".gameBoard")
+var table = document.querySelector("table")
 var td = document.querySelectorAll("td")
 console.log("🚀 ~ file: app.js:6 ~ td:", td)
 
@@ -37,14 +38,14 @@ function headBtn() {
         tossResult.innerHTML = "Congratulation! Head's <br>"  + player1 + " "+"Turn's"
         for (var i of td) {
             i.setAttribute("onclick", "playerOne(this)")
-            console.log(i)
+            // console.log(i)
         }
     } else {
         tossResult.innerHTML = "Opp's Tail's <br>" + player2 +" " +"Turn's"
         // td.setAttribute("onclick", "player2()")
         for (var i of td) {
             i.setAttribute("onclick", "playerTwo(this)")
-            console.log(i)
+            // console.log(i)
         }
     }
 }
@@ -68,7 +69,7 @@ function tailBtn() {
         tossResult.innerHTML = "Congratulation! Tail's <br>"  + player1 + " "+"Turn's"
         for (var i of td) {
             i.setAttribute("onclick", "playerOne(this)")
-            console.log(i)
+            // console.log(i)
         }
     } else {
         tossResult.innerHTML = "Opp's Head's <br>" + player2 +" " +"Turn's"
@@ -81,8 +82,8 @@ function tailBtn() {
 }
 
 function playerTwo(ele1){
-    console.log(ele1)
-    ele1.innerHTML = "X"
+    // console.log(ele1)
+    ele1.innerHTML = "O"
     ele1.classList.add("disable")
     for (var i of td) {
         i.setAttribute("onclick", "playerOne(this)")
@@ -92,83 +93,130 @@ function playerTwo(ele1){
 
         td1.classList.add("right")   
         td2.classList.add("right")   
-        td3.classList.add("right")   
+        td3.classList.add("right") 
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
     }else if(td1.innerHTML == "O" && td4.innerHTML == "O" && td7.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td1.classList.add("right")   
         td4.classList.add("right")   
         td7.classList.add("right")   
     }else if(td1.innerHTML == "O" && td5.innerHTML == "O" && td9.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td1.classList.add("right")   
         td5.classList.add("right")   
         td9.classList.add("right")   
     }else if(td2.innerHTML == "O" && td5.innerHTML == "O" && td8.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td2.classList.add("right")   
         td5.classList.add("right")   
         td8.classList.add("right")   
     }else if(td3.innerHTML == "O" && td5.innerHTML == "O" && td7.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td3.classList.add("right")   
         td5.classList.add("right")   
         td7.classList.add("right")   
     }else if(td3.innerHTML == "O" && td6.innerHTML == "O" && td9.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td3.classList.add("right")   
         td6.classList.add("right")   
         td9.classList.add("right")   
     }else if(td4.innerHTML == "O" && td5.innerHTML == "O" && td6.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         
         td4.classList.add("right")   
         td5.classList.add("right")   
         td6.classList.add("right")   
     }else if(td7.innerHTML == "O" && td8.innerHTML == "O" && td9.innerHTML=="O"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         
         td7.classList.add("right")   
         td8.classList.add("right")   
         td9.classList.add("right")   
     }
     if(td1.innerHTML == "X" && td2.innerHTML == "X" && td3.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td1.classList.add("right")   
         td2.classList.add("right")   
         td3.classList.add("right")   
     }else if(td1.innerHTML == "X" && td4.innerHTML == "X" && td7.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td1.classList.add("right")   
         td4.classList.add("right")   
         td7.classList.add("right")   
     }else if(td1.innerHTML == "X" && td5.innerHTML == "X" && td9.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td1.classList.add("right")   
         td5.classList.add("right")   
         td9.classList.add("right")   
     }else if(td2.innerHTML == "X" && td5.innerHTML == "X" && td8.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         td2.classList.add("right")   
         td5.classList.add("right")   
         td8.classList.add("right")   
     }else if(td3.innerHTML == "X" && td5.innerHTML == "X" && td7.innerHTML=="X"){
-
+        for (var i of td) {
+             i.classList.add("disable")           
+        }
         td3.classList.add("right")   
         td5.classList.add("right")   
         td7.classList.add("right")   
     }else if(td3.innerHTML == "X" && td6.innerHTML == "X" && td9.innerHTML=="X"){
-
+        for (var i of td) {  
+            i.classList.add("disable")           
+        }
         td3.classList.add("right")   
         td6.classList.add("right")   
         td9.classList.add("right")   
     }else if(td4.innerHTML == "X" && td5.innerHTML == "X" && td6.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         
         td4.classList.add("right")   
         td5.classList.add("right")   
         td6.classList.add("right")   
     }else if(td7.innerHTML == "X" && td8.innerHTML == "X" && td9.innerHTML=="X"){
-
+        for (var i of td) {
+            
+            i.classList.add("disable")           
+        }
         
         td7.classList.add("right")   
         td8.classList.add("right")   
@@ -177,95 +225,129 @@ function playerTwo(ele1){
     
 }
 function playerOne(ele2){
-    console.log(ele2)
+    // console.log(ele2)
     ele2.classList.add("disable")
-    ele2.innerHTML = "O"
+    ele2.innerHTML = "X"
     for (var i of td) {
         i.setAttribute("onclick", "playerTwo(this)")
-        console.log(i)
+        // console.log(i)
     }
     if(td1.innerHTML == "X" && td2.innerHTML == "X" && td3.innerHTML=="X"){
-
+        for (var v of td) {
+            v.classList.add("disable")
+        }
         td1.classList.add("right")   
         td2.classList.add("right")   
-        td3.classList.add("right")   
+        td3.classList.add("right")
     }else if(td1.innerHTML == "X" && td4.innerHTML == "X" && td7.innerHTML=="X"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td1.classList.add("right")   
         td4.classList.add("right")   
         td7.classList.add("right")   
     }else if(td1.innerHTML == "X" && td5.innerHTML == "X" && td9.innerHTML=="X"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td1.classList.add("right")   
         td5.classList.add("right")   
         td9.classList.add("right")   
     }else if(td2.innerHTML == "X" && td5.innerHTML == "X" && td8.innerHTML=="X"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td2.classList.add("right")   
         td5.classList.add("right")   
         td8.classList.add("right")   
     }else if(td3.innerHTML == "X" && td5.innerHTML == "X" && td7.innerHTML=="X"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td3.classList.add("right")   
         td5.classList.add("right")   
         td7.classList.add("right")   
     }else if(td3.innerHTML == "X" && td6.innerHTML == "X" && td9.innerHTML=="X"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td3.classList.add("right")   
         td6.classList.add("right")   
         td9.classList.add("right")   
     }else if(td4.innerHTML == "X" && td5.innerHTML == "X" && td6.innerHTML=="X"){
 
-        
+
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td4.classList.add("right")   
         td5.classList.add("right")   
         td6.classList.add("right")   
     }else if(td7.innerHTML == "X" && td8.innerHTML == "X" && td9.innerHTML=="X"){
 
-        
+    
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td7.classList.add("right")   
         td8.classList.add("right")   
         td9.classList.add("right")   
     }
     if(td1.innerHTML == "O" && td2.innerHTML == "O" && td3.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td1.classList.add("right")   
         td2.classList.add("right")   
         td3.classList.add("right")   
     }else if(td1.innerHTML == "O" && td4.innerHTML == "O" && td7.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td1.classList.add("right")   
         td4.classList.add("right")   
         td7.classList.add("right")   
     }else if(td1.innerHTML == "O" && td5.innerHTML == "O" && td9.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td1.classList.add("right")   
         td5.classList.add("right")   
         td9.classList.add("right")   
     }else if(td2.innerHTML == "O" && td5.innerHTML == "O" && td8.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td2.classList.add("right")   
         td5.classList.add("right")   
         td8.classList.add("right")   
     }else if(td3.innerHTML == "O" && td5.innerHTML == "O" && td7.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td3.classList.add("right")   
         td5.classList.add("right")   
         td7.classList.add("right")   
     }else if(td3.innerHTML == "O" && td6.innerHTML == "O" && td9.innerHTML=="O"){
-
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td3.classList.add("right")   
         td6.classList.add("right")   
         td9.classList.add("right")   
     }else if(td4.innerHTML == "O" && td5.innerHTML == "O" && td6.innerHTML=="O"){
 
-        
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td4.classList.add("right")   
         td5.classList.add("right")   
         td6.classList.add("right")   
     }else if(td7.innerHTML == "O" && td8.innerHTML == "O" && td9.innerHTML=="O"){
 
-        
+        for (var i of td) {
+            i.classList.add("disable")
+        }
         td7.classList.add("right")   
         td8.classList.add("right")   
         td9.classList.add("right")   
@@ -274,41 +356,4 @@ function playerOne(ele2){
 }
 
 
-
-
-// if(td1.innerHTML === td2.innerHTML && td2.innerHTML === td3.innerHTML){
-        
-//     td1.classList.add("right")   
-//     td2.classList.add("right")   
-//     td3.classList.add("right")   
-// }else if(td1.innerHTML === td5.innerHTML && td5.innerHTML === td9.innerHTML){
-//     td1.classList.add("right")   
-//     td5.classList.add("right")   
-//     td9.classList.add("right")     
-// }else if(td2.innerHTML === td5.innerHTML && td5.innerHTML === td8.innerHTML){
-    
-//     td2.classList.add("right")   
-//     td5.classList.add("right")   
-//     td8.classList.add("right")    
-// }else if(td3.innerHTML === td5.innerHTML && td5.innerHTML === td7.innerHTML){
-     
-//     td3.classList.add("right")   
-//     td5.classList.add("right")   
-//     td7.classList.add("right")    
-// }else if(td3.innerHTML === td6.innerHTML && td6.innerHTML === td9.innerHTML){
-    
-//     td3.classList.add("right")   
-//     td6.classList.add("right")   
-//     td9.classList.add("right")    
-// }else if(td4.innerHTML === td5.innerHTML && td5.innerHTML === td6.innerHTML){
-     
-//     td4.classList.add("right")   
-//     td5.classList.add("right")   
-//     td6.classList.add("right")    
-// }else if(td7.innerHTML === td8.innerHTML && td9.innerHTML === td6.innerHTML){
-    
-//     td7.classList.add("right")   
-//     td8.classList.add("right")   
-//     td9.classList.add("right")   
-// }
 
