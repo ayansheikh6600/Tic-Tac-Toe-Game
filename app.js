@@ -54,7 +54,7 @@ function tailBtn() {
     var player2 = document.getElementById("PlayerTwo").value
 
 
-    if (!player1 && !player2) {
+    if (!player1 || !player2) {
         alert("Enter Players Name")
         return
     }
@@ -157,71 +157,6 @@ function playerTwo(ele1){
         td8.classList.add("right")   
         td9.classList.add("right")   
     }
-    if(td1.innerHTML == "X" && td2.innerHTML == "X" && td3.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        td1.classList.add("right")   
-        td2.classList.add("right")   
-        td3.classList.add("right")   
-    }else if(td1.innerHTML == "X" && td4.innerHTML == "X" && td7.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        td1.classList.add("right")   
-        td4.classList.add("right")   
-        td7.classList.add("right")   
-    }else if(td1.innerHTML == "X" && td5.innerHTML == "X" && td9.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        td1.classList.add("right")   
-        td5.classList.add("right")   
-        td9.classList.add("right")   
-    }else if(td2.innerHTML == "X" && td5.innerHTML == "X" && td8.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        td2.classList.add("right")   
-        td5.classList.add("right")   
-        td8.classList.add("right")   
-    }else if(td3.innerHTML == "X" && td5.innerHTML == "X" && td7.innerHTML=="X"){
-        for (var i of td) {
-             i.classList.add("disable")           
-        }
-        td3.classList.add("right")   
-        td5.classList.add("right")   
-        td7.classList.add("right")   
-    }else if(td3.innerHTML == "X" && td6.innerHTML == "X" && td9.innerHTML=="X"){
-        for (var i of td) {  
-            i.classList.add("disable")           
-        }
-        td3.classList.add("right")   
-        td6.classList.add("right")   
-        td9.classList.add("right")   
-    }else if(td4.innerHTML == "X" && td5.innerHTML == "X" && td6.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        
-        td4.classList.add("right")   
-        td5.classList.add("right")   
-        td6.classList.add("right")   
-    }else if(td7.innerHTML == "X" && td8.innerHTML == "X" && td9.innerHTML=="X"){
-        for (var i of td) {
-            
-            i.classList.add("disable")           
-        }
-        
-        td7.classList.add("right")   
-        td8.classList.add("right")   
-        td9.classList.add("right")   
-    }
     
 }
 function playerOne(ele2){
@@ -293,65 +228,7 @@ function playerOne(ele2){
         td8.classList.add("right")   
         td9.classList.add("right")   
     }
-    if(td1.innerHTML == "O" && td2.innerHTML == "O" && td3.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td1.classList.add("right")   
-        td2.classList.add("right")   
-        td3.classList.add("right")   
-    }else if(td1.innerHTML == "O" && td4.innerHTML == "O" && td7.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td1.classList.add("right")   
-        td4.classList.add("right")   
-        td7.classList.add("right")   
-    }else if(td1.innerHTML == "O" && td5.innerHTML == "O" && td9.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td1.classList.add("right")   
-        td5.classList.add("right")   
-        td9.classList.add("right")   
-    }else if(td2.innerHTML == "O" && td5.innerHTML == "O" && td8.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td2.classList.add("right")   
-        td5.classList.add("right")   
-        td8.classList.add("right")   
-    }else if(td3.innerHTML == "O" && td5.innerHTML == "O" && td7.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td3.classList.add("right")   
-        td5.classList.add("right")   
-        td7.classList.add("right")   
-    }else if(td3.innerHTML == "O" && td6.innerHTML == "O" && td9.innerHTML=="O"){
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td3.classList.add("right")   
-        td6.classList.add("right")   
-        td9.classList.add("right")   
-    }else if(td4.innerHTML == "O" && td5.innerHTML == "O" && td6.innerHTML=="O"){
-
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td4.classList.add("right")   
-        td5.classList.add("right")   
-        td6.classList.add("right")   
-    }else if(td7.innerHTML == "O" && td8.innerHTML == "O" && td9.innerHTML=="O"){
-
-        for (var i of td) {
-            i.classList.add("disable")
-        }
-        td7.classList.add("right")   
-        td8.classList.add("right")   
-        td9.classList.add("right")   
-    }
+    
     
 }
 
