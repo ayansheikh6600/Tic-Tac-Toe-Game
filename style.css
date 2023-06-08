@@ -56,10 +56,10 @@ tr{
 .head{
     color: #1d865e;
     font-size: 50px;
+    font-weight: bolder ;
 
 }
 .tossDiv{
-    border: 1px solid red;
     height: 80vh;
     width: 60%;
     display: flex;
